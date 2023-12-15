@@ -1,0 +1,47 @@
+What is HTTP?
+    HTTP is "Hypertext Transfer Protocol", a protocol for browsers & servers to communicate with.
+    governs how clients get data from, or sends data to, a server.
+
+What is a URL?
+    URL is "Universal Resource Locator", an address for any internet resource
+
+What is DNS?
+    DNS is "Domain Name System" or the "phonebook" of the internet. It takes URLs and turns them into IP addresses
+
+What is a query string?
+    a query string is an optional part of a URL that assigns values to specified parameters. 
+    It provides "extra" information such as search queries & info from forms
+    The query string allows you to pass key-value pairs into the URL, in the format ?key1=value1&key2=value2...
+
+What are two HTTP verbs and how are they different?
+    two HTTP verbs are: GET - gets data from the server, 
+                        POST - send data to the server, 
+
+What is an HTTP request?
+    an HTTP request is a request from client to server which follows the HTTP protocol. 
+    (eg a request for HTML from news.google.com)
+
+What is an HTTP response?
+    an HTTP response is a response from server to client, following HTTP protocol
+    (eg sending back HTML/CSS/JS/etc)
+
+What is an HTTP header? Give a couple examples of request and response headers you have seen.
+    an HTTP header is 
+
+What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+    the browser looks up the ip address for the domain name & dns
+    the browser sends a http request to the server.
+    the server sends back a http response.
+    the browser begins rendering the html
+
+    it turns "site.com" into an ip address
+    connects to that ip address
+    on port 80 (the default port)
+    using HTTP protocol
+    ask for /some/page.html
+
+    Your browser “resolves” the name into an IP address using DNS
+    Your browser makes a request to that IP address, including headers (info about browser, any previous cookies, and other things)
+    The server sends a response (typically, HTML, with a status code (200 if it was sucessful)
+    The browser makes a DOM from that HTML, and finds any other resources needed (images, CSS, JavaScript, etc)
+    The browser makes separate HTTP requests for those resources and receives response from the server for each
